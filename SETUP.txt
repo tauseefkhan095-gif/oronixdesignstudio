@@ -1,0 +1,25 @@
+ORONIX — READY FOR GITHUB PAGES
+
+This package already contains the built website. No build commands are needed to publish it. Visitors open your URL and the website starts automatically.
+
+1. Extract this ZIP.
+2. Upload the extracted CONTENTS to the root of your GitHub repository. index.html must be at the top level, beside the existing README.md, not inside an extra folder.
+3. In repository Settings > Pages, use:
+   Source: Deploy from a branch
+   Branch: main (or the branch you uploaded to)
+   Folder: / (root)
+   Click Save if you changed a setting.
+4. Wait for GitHub Pages deployment to finish, then open the published website URL. Refresh the page if the old README is cached.
+
+Upload index.html AND the assets, brand, projects, fonts and favicon files. .nojekyll is included to publish the static files directly. The source-code folder is for future editing only; it is not required by visitors.
+
+The same built files support a root-domain URL or a GitHub repository URL. You do not need to enter the repository name in the code.
+
+CONTACT EMAIL — OWNER SETUP ONLY
+The forms send inquiries to oronixdesign@gmail.com through FormSubmit. Submit one labelled test from the live website, click the FormSubmit activation link in that Gmail inbox (check Spam), then submit a second test to confirm receipt. No visitor performs this activation step. Inbox delivery still needs verification after activation.
+
+EDITABLE SOURCE
+Editable React/Vite source is included in source-code. Its README describes future edits. The earlier Next.js archive is not required to publish these prebuilt files.
+
+GitHub Pages publishing documentation:
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site

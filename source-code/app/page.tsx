@@ -1,4 +1,3 @@
-"use client";
 import {useEffect,useRef,useState,useId,type FormEvent} from "react";
 import {Menu,X,Plus,Minus,Play,Pause,Check,Mail,Layers3,Globe2,Sparkles,Code2} from "lucide-react";
 import {Dialog,DialogContent,DialogTitle,DialogDescription} from "@/components/ui/dialog";
@@ -62,7 +61,7 @@ function Inquiry({close,inline=false}:{close?:()=>void;inline?:boolean}){
   if(!p.name||!p.email||p.message.length<10){setError("Enter your name, a valid email, and a message of at least 10 characters.");return}
   setStatus("saving");
   try{
-   await forwardContactInquiry(p,new URL(assetPath("/"),window.location.origin).href);
+   await forwardContactInquiry(p,new URL("./",window.location.href).href);
    setBrief(`Name: ${p.name}\nEmail: ${p.email}\nCompany: ${p.company}\nService: ${service}\nBudget: ${budget||"To be discussed"}\n\n${p.message}`);setStatus("success");
   }catch{setStatus("idle");setError("We couldn’t confirm your submission. Please try again or email oronixdesign@gmail.com directly.")}
  };
